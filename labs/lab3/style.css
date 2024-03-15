@@ -1,0 +1,150 @@
+:root {
+    --sprites: url(https://m.media-amazon.com/images/G/01/gno/sprites/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png);
+    --accent: rgb(245,191,118);
+    --background: rgb(235,237,237);
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    background-color: var(--background);
+}
+header {
+    height: 60px;
+    padding: 10px;
+    background-color: #131921;
+    color: white;
+}
+nav h1 a {
+    display: block;
+    margin: 0;
+    width: 120px;
+    height: 39px;
+    color: white;
+    background-image: var(--sprites);
+    background-position: -10px -42px;
+    background-size: 350px;
+    background-repeat: no-repeat;
+    text-indent: 98px;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#search {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+#search-container {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+#account {
+    margin-right: 20px;
+}
+#cart {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#cart-count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--accent);
+    color: black;
+    font-size: 120%;
+    font-weight: 700;
+}
+#cart-icon a {
+    display: block;
+    width: 92px;
+    height: 54px;
+    background-image: var(--sprites);
+    background-position: -6px -679px;
+}
+main {
+    background-color: var(--background);
+}
+#products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+#cart-contents {
+    width: 80%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+#cart-contents .cart-item {
+    margin-bottom: 60px;
+}
+.product {
+    position: relative;
+    color: #0F1111;
+    background-color: white;
+}
+.product:hover .product-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3)
+}
+.product img {
+    width: calc(100% - 40px);
+    height: auto;
+    border: 20px solid white;
+}
+.product h2 {
+    margin-bottom: 0;
+}
+.product h3 {
+    margin-top: 0;
+}
+.product h2, .product h3 {
+    margin-left: 20px;
+}
+.add-to-cart {
+    background-color: rgb(250,216,76);
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 112.5%;
+    font-weight: bold;
+    cursor: pointer;
+}
+main h1 {
+    width: 80%;
+    padding: 10px 5px;
+    margin: 20px auto 0;
+    background-color: var(--background);
+}
+#account {
+    display: flex;
+    align-items: center;
+}
+#account a {
+    color: white;
+    margin-right: 10px;
+}

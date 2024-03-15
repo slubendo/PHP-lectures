@@ -1,0 +1,11 @@
+# REMOVE THESE LINES and modify the RewriteRule to match your project's path,
+# e.g. if your lab is inside a folder named lab4 located in your Apache document root, 
+# change /index.php to /lab4/index.php
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ /index.php [L,QSA]
+
+# mod_rewrite might have to be enabled
+# involves editing apache2.conf
+# look for directory
